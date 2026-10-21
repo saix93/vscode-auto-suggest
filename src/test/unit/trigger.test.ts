@@ -1,6 +1,5 @@
 import * as assert from 'node:assert/strict';
-import { describe, it } from 'node:test';
-import { inCommentOrString, startsIdentifier } from '../trigger';
+import { inCommentOrString, startsIdentifier } from '../../trigger';
 
 // Simulates typing the character right before '|' in `line`.
 function typed(line: string): boolean {
