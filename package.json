@@ -1,0 +1,39 @@
+{
+  "name": "csharp-auto-suggest",
+  "displayName": "C# Auto Suggest",
+  "description": "Rider-like completion: opens the suggestion list as soon as a new identifier starts being typed.",
+  "version": "0.1.0",
+  "publisher": "saix93",
+  "author": "Raúl Torres González",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/saix93/vscode-auto-suggest.git"
+  },
+  "bugs": {
+    "url": "https://github.com/saix93/vscode-auto-suggest/issues"
+  },
+  "homepage": "https://github.com/saix93/vscode-auto-suggest#readme",
+  "engines": {
+    "vscode": "^1.64.0"
+  },
+  "categories": ["Programming Languages", "Other"],
+  "keywords": ["csharp", "c#", "unity", "rider", "completion", "intellisense"],
+  "activationEvents": ["onLanguage:csharp"],
+  "main": "./out/extension.js",
+  "contributes": {},
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "test": "npm run compile && node --test \"out/test/**/*.test.js\"",
+    "package": "vsce package",
+    "deploy": "vsce publish"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/vscode": "1.64.0",
+    "@vscode/vsce": "^3.0.0",
+    "typescript": "^5.4.0"
+  }
+}
