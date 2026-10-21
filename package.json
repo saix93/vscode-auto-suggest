@@ -3,7 +3,7 @@
   "displayName": "C# Auto Suggest",
   "description": "Rider-like completion: opens the suggestion list as soon as a new identifier starts being typed.",
   "version": "0.1.0",
-  "publisher": "saix93",
+  "publisher": "Saix93",
   "author": "Raúl Torres González",
   "license": "MIT",
   "repository": {

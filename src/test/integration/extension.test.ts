@@ -18,7 +18,7 @@ suite('Auto Suggest', () => {
                 return [new vscode.CompletionItem('value', vscode.CompletionItemKind.Variable)];
             },
         });
-        await vscode.extensions.getExtension('saix93.csharp-auto-suggest')!.activate();
+        await vscode.extensions.getExtension('Saix93.csharp-auto-suggest')!.activate();
     });
 
     suiteTeardown(() => provider.dispose());
